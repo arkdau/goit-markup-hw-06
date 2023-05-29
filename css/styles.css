@@ -441,6 +441,7 @@ color: #2196f3;
 }
 .link-list--padding {
   padding-top: 12px;
+  padding-left: 0;
 }
 .footer__social .link-list__item {
   padding: 0 5px;
