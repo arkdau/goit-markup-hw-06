@@ -1,3 +1,3 @@
-# goit-markup-hw-06
+# goit-markup-hw-05
 
-https://arkdau.github.io/goit-markup-hw-06/index.html
+https://arkdau.github.io/goit-markup-hw-05/index.html
