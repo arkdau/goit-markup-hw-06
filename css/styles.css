@@ -220,6 +220,10 @@ header {
   padding: 10px 41px;
   font-size: 1rem;
 }
+.hero__btn:hover {
+background: #fff;
+color: #2196f3;
+}
 /* Section - 0 ------------------------------ */
 .card {
   width: 270px;
