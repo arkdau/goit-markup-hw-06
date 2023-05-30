@@ -485,7 +485,7 @@ header {
 }
 .form-newsletter__label {
   /* display: flex; */
-  color: var(--color-text-light) ;
+  color: var(--color-text-light);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14285;
@@ -511,11 +511,21 @@ header {
 }
 .form-newsletter__btn-send {
   position: absolute;
-  left: 365px;
+  left: 377px;
   top: 50px;
   width: 200px;
+  height: 50px;
   display: inline;
-  padding: 10px 76px 10px 42px;
+  padding: 10px 76px 10px 22px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background-color: var(--bgcolor-select);
+  border: none;
+  color: var(--color-text-light);
+  border-radius: 4px;
+
   /* justify-content: center; */
   /* align-items: center; */
   /* gap: 24px; */
