@@ -462,11 +462,11 @@ header {
   align-items: flex-start;
 }
 /* form send to newsletter ---------------- */
-.forms {
+.newsletter__flex {
   position: relative;
-  display: flex;
+  /* display: flex; */
   gap: 12px;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: start;
   /* padding-top: 20px; */
 }
@@ -508,6 +508,9 @@ header {
   /* line-height: 1.25; */
   letter-spacing: 0.03em;
   padding: 15px 16px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-newsletter__btn-send {
   position: absolute;
@@ -515,8 +518,11 @@ header {
   top: 50px;
   width: 200px;
   height: 50px;
-  display: inline;
-  padding: 10px 76px 10px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 10px auto 10px 22px;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.875;
@@ -525,19 +531,7 @@ header {
   border: none;
   color: var(--color-text-light);
   border-radius: 4px;
-
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* gap: 24px; */
-  /* cursor: pointer; */
 }
-
-/* color: var(--brand-color-white); */
-/* border-radius: var(--border-radius-default); */
-/* padding: 15px 16px; */
-/* transition-property: border; */
-/* transition-duration: 250ms; */
-/* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 
 /* the modal ------------------------------ */
 /* the modal (background) */
@@ -603,3 +597,9 @@ header {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.1);
 }
+.form-modal__header {
+  font-size: 1.25rem;;
+  line-height: 1.15;
+  padding: 40px 40px 12px 40px  ;
+}
+
