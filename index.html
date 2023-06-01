@@ -640,27 +640,27 @@
         </button>
         <h2 class="form-modal__header">Zostaw swoje dane w formularzu poniżej</h2>
         <form class="flex form-modal__flex">
-          <label class="form-modal__label-name" for="name">
-            Imie
+          <div class="icon__container">
+            <label class="form-modal__label-name" for="name"> Imie </label>
+            <input class="form-modal__input-name" type="text" name="data-name" id="name" />
             <svg class="icon name__icon">
               <use href="./images/icons.svg#icon-user"></use>
             </svg>
-          </label>
-          <input class="form-modal__input-name" type="text" name="data-name" id="name" />
-          <label class="form-modal__label-phone" for="phone">
-            Telefon
+          </div>
+          <div class="icon__container">
+            <label class="form-modal__label-phone" for="phone"> Telefon </label>
+            <input class="form-modal__input-phone" type="tel" name="data-phone" id="phone" />
             <svg class="icon phone__icon">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
-          </label>
-          <input class="form-modal__input-phone" type="tel" name="data-phone" id="phone" />
-          <label class="form-modal__label-email" for="email">
-            Email
+          </div>
+          <div class="icon__container">
+            <label class="form-modal__label-email" for="email"> Email </label>
+            <input class="form-modal__input-email" type="email" name="data-email" id="email" />
             <svg class="icon email__icon">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
-          </label>
-          <input class="form-modal__input-email" type="email" name="data-email" id="email" />
+          </div>
           <label class="form-modal__label-comment" for="comment">Komentarz</label>
           <textarea
             class="form-modal__textarea-comment"
