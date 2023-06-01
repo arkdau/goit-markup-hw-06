@@ -621,7 +621,6 @@
               id="user_email"
               placeholder="E-mail"
             />
-            <!-- </p> -->
           </form>
           <button class="form-newsletter__btn-send" type="submit">
             Zapisz się
@@ -640,15 +639,36 @@
           </svg>
         </button>
         <h2 class="form-modal__header">Zostaw swoje dane w formularzu poniżej</h2>
-        <form>
-          <label for="name">Imie</label>
-          <input type="text" name="data-name" id="name" />
-          <label for="phone">Telefon</label>
-          <input type="tel" name="data-phone" id="phone" />
-          <label for="email">Email</label>
-          <input type="email" name="data-email" id="email" />
-          <label for="comment">Komentarz</label>
-          <textarea rows="15" cols="50" id="comment"></textarea>
+        <form class="flex form-modal__flex">
+          <label class="form-modal__label-name" for="name">
+            Imie
+            <svg class="icon name__icon">
+              <use href="./images/icons.svg#icon-user"></use>
+            </svg>
+          </label>
+          <input class="form-modal__input-name" type="text" name="data-name" id="name" />
+          <label class="form-modal__label-phone" for="phone">
+            Telefon
+            <svg class="icon phone__icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <input class="form-modal__input-phone" type="tel" name="data-phone" id="phone" />
+          <label class="form-modal__label-email" for="email">
+            Email
+            <svg class="icon email__icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </label>
+          <input class="form-modal__input-email" type="email" name="data-email" id="email" />
+          <label class="form-modal__label-comment" for="comment">Komentarz</label>
+          <textarea
+            class="form-modal__textarea-comment"
+            rows="15"
+            cols="50"
+            id="comment"
+          ></textarea>
+          <p>Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</p>
         </form>
       </div>
     </div>

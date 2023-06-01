@@ -548,6 +548,8 @@ header {
   height: 100%;
 }
 .modal {
+  padding: 40px 40px;
+  box-sizing: border-box;
   cursor: initial;
   /* cursor: pointer; */
   position: absolute;
@@ -597,9 +599,128 @@ header {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.1);
 }
-.form-modal__header {
-  font-size: 1.25rem;;
-  line-height: 1.15;
-  padding: 40px 40px 12px 40px  ;
-}
 
+.name__icon:hover {
+  /* --color-icon-select: #2196f3; */
+  --color-icon: #fff;
+}
+.phone__icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 34px;
+}
+.email__icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 34px;
+}
+.form-modal__header {
+  font-size: 1.25rem;
+  line-height: 1.15;
+  padding-bottom: 11px;
+  /* padding: 40px 40px 12px 40px; */
+}
+.form-modal__flex {
+  flex-direction: column;
+  gap: 0;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+}
+.form-modal__label-name {
+  position: relative;
+  padding-bottom: 4px;
+  /* text-align: left; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+.form-modal__input-name {
+  /* position: relative; */
+  box-sizing: border-box;
+  width: 448px;
+  height: 40px;
+  margin-bottom: 10px;
+  /* padding-left: 30px; */
+  /* background-image: url('https://www.prospectsoft.com/images/security/shield2.svg'); */
+  /* background-image: url("/images/section1_1.jpg"); */
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 10px 1rem;
+  /* background-image: url("../images/icons.svg#icon-user"); */
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-modal__input-name:focus ~ .name__icon {
+  --color-icon-select: var(--bgcolor-select);
+  /* --color-icon: #fff; */
+}
+.name__icon--blue {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 34px;
+  --color-icon-select: #2196f3;
+}
+.name__icon:hover {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 34px;
+  --color-icon-select: #2196f3;
+}
+.name__icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 34px;
+  /* --color-icon-select: #2196f3; */
+  /* --color-icon-select: #212121; */
+}
+.form-modal__label-phone {
+  position: relative;
+  padding-bottom: 4px;
+  text-align: left;
+}
+.form-modal__input-phone {
+  width: 448px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.form-modal__label-email {
+  position: relative;
+  padding-bottom: 4px;
+  text-align: left;
+}
+.form-modal__input-email {
+  width: 448px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.form-modal__label-comment {
+  padding-bottom: 4px;
+  text-align: left;
+}
+.form-modal__textarea-comment {
+  width: 448px;
+  height: 120px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+/* .ginput_container input { */
+/* padding-left: 30px; */
+/* background-image: url('https://www.prospectsoft.com/images/security/shield2.svg'); */
+/* background-image: url('icons.svg#icon-clock'); */
+
+/* ---color-icon-select-color-icon-select: #2196f3; */
+/* background-size: 16px 16px; */
+/* background-repeat: no-repeat; */
+/* background-position: 10px 1rem; */
+/* } */
