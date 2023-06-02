@@ -591,11 +591,17 @@ header {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.1);
 }
+.form-modal label {
+  font-size: 0.75rem;
+  line-height: 1.1666;
+  letter-spacing: 0.01em;
+  color: var(--color-text-secondary);
+}
 .form-modal__header {
   font-size: 1.25rem;
   line-height: 1.15;
   padding-bottom: 11px;
-  /* padding: 40px 40px 12px 40px; */
+  color: var(--color-text-dark);
 }
 .form-modal__flex {
   flex-direction: column;
@@ -606,11 +612,23 @@ header {
 .form-modal__label-name {
   padding-bottom: 4px;
 }
+input[type=text] {
+  /* width: 100%; */
+  /* padding: 12px 20px; */
+  /* margin: 8px 0; */
+  /* box-sizing: border-box; */
+  /* border: 3px solid #ccc; */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
 .form-modal__input-name {
   box-sizing: border-box;
   width: 448px;
   height: 40px;
   margin-bottom: 10px;
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   /* background-size: 16px 16px; */
@@ -619,6 +637,9 @@ header {
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-modal__input-name:focus {
+  border: 1px solid var(--bgcolor-select);
 }
 .form-modal__input-name:focus + .name__icon {
   --color-icon-select: var(--bgcolor-select);
@@ -633,12 +654,27 @@ header {
 }
 .form-modal__label-phone {
   padding-bottom: 4px;
+  /* font-size: 0.75rem; */
+  /* line-height: 1.1666; */
+  /* letter-spacing: 0.01em; */
+  /* color: var(--color-text-secondary); */
+}
+input[type=tel] {
+  /* width: 100%; */
+  /* padding: 12px 20px; */
+  /* margin: 8px 0; */
+  /* box-sizing: border-box; */
+  /* border: 3px solid #ccc; */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
 }
 .form-modal__input-phone {
   box-sizing: border-box;
   width: 448px;
   height: 40px;
   margin-bottom: 10px;
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   /* background-size: 16px 16px; */
@@ -647,6 +683,9 @@ header {
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-modal__input-phone:focus {
+  border: 1px solid var(--bgcolor-select);
 }
 .form-modal__input-phone:focus + .phone__icon {
   --color-icon-select: var(--bgcolor-select);
@@ -661,11 +700,22 @@ header {
 .form-modal__label-email {
   padding-bottom: 4px;
 }
+input[type=email] {
+  /* width: 100%; */
+  /* padding: 12px 20px; */
+  /* margin: 8px 0; */
+  /* box-sizing: border-box; */
+  /* border: 3px solid #ccc; */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
 .form-modal__input-email {
   box-sizing: border-box;
   width: 448px;
   height: 40px;
   margin-bottom: 10px;
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   /* background-size: 16px 16px; */
@@ -674,6 +724,9 @@ header {
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-modal__input-email:focus {
+  border: 1px solid var(--bgcolor-select);
 }
 .form-modal__input-email:focus + .email__icon {
   --color-icon-select: var(--bgcolor-select);
@@ -690,11 +743,22 @@ header {
   text-align: left;
 }
 .form-modal__textarea-comment {
+  box-sizing: border-box;
   width: 448px;
   height: 120px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  resize: none;
   margin-bottom: 20px;
+  padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+.form-modal__input-checkbox {
+
 }
 /* BEM-tools ------------------------------ */
 .icon {
@@ -724,7 +788,6 @@ header {
 /* top: 34px; */
 /* --color-icon-select: #2196f3; */
 /* } */
-
 
 /* .phone__icon { */
 /* position: absolute; */
