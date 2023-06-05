@@ -612,7 +612,7 @@ header {
 .form-modal__label-name {
   padding-bottom: 4px;
 }
-input[type=text] {
+input[type='text'] {
   /* width: 100%; */
   /* padding: 12px 20px; */
   /* margin: 8px 0; */
@@ -659,7 +659,7 @@ input[type=text] {
   /* letter-spacing: 0.01em; */
   /* color: var(--color-text-secondary); */
 }
-input[type=tel] {
+input[type='tel'] {
   /* width: 100%; */
   /* padding: 12px 20px; */
   /* margin: 8px 0; */
@@ -700,7 +700,7 @@ input[type=tel] {
 .form-modal__label-email {
   padding-bottom: 4px;
 }
-input[type=email] {
+input[type='email'] {
   /* width: 100%; */
   /* padding: 12px 20px; */
   /* margin: 8px 0; */
@@ -757,9 +757,39 @@ input[type=email] {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.form-modal__input-checkbox {
-
+input[type='checkbox'] {
+  /* appearance: auto; */
+  /* width: 100%; */
+  width: 16px;
+  height: 15px;
+  /* position: absolute; */
+  opacity: 1;
+  cursor: pointer;
+  border: none;
+  /* height: 0; */
+  /* width: 0; */
 }
+.form-modal__input-checkbox {
+  position: absolute;
+  cursor: pointer;
+  /* display: none; */
+  display: inline-block;
+  /* border: 1px solid #212121; */
+  /* background: #212121; */
+  /* margin-left: 15px; */
+  /* visibility: hidden; */
+  left: 15px;
+  top: 0;
+}
+.form-modal__input-checkbox:checked ~ .checkbox__icon {
+  display:inline-block;
+}
+.form-modal__label-checkbox {
+  /* position: absolute; */
+  display: inline-block;
+  margin-left: 50px;
+}
+
 /* BEM-tools ------------------------------ */
 .icon {
   /* position: absolute; */
@@ -772,7 +802,28 @@ input[type=email] {
 }
 .icon__container {
   position: relative;
+  left: 0px;
+  top: 0;
 }
+.uncheckbox__icon {
+  position: absolute;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  /* left: -20px; */
+  left: 15px;
+  top: 0;
+}
+.checkbox__icon {
+  position: absolute;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  /* left: 20px; */
+  left: 15px;
+  top: 0;
+}
+
 /* .name__icon--blue { */
 /* position: absolute; */
 /* width: 20px; */

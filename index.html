@@ -667,14 +667,23 @@
             placeholder="Wprowadź tekst"
             id="comment"
           ></textarea>
-          <div>
-            <input type="checkbox" name="ack_privacy_policy" id="privacy_policy" />
-            <label for="privacy_policy"
+          <div class="icon__container">
+            <!-- <svg class="icon uncheckbox__icon"> -->
+              <!-- <use href="./images/icons.svg#icon-uncheck_Box"></use> -->
+            <!-- </svg> -->
+            <svg class="icon checkbox__icon">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+            <input
+              class="form-modal__input-checkbox"
+              type="checkbox"
+              name="ack_privacy_policy"
+              id="privacy_policy"
+            />
+
+            <label class="form-modal__label-checkbox" for="privacy_policy"
               >Oświadczam iż akceptuję<span>Regulamin i Politykę Prywatności.</span></label
             >
-            <!-- <svg class="icon checkbox__icon"> -->
-              <!-- <use href="./images/icons.svg#icon-check"></use> -->
-            <!-- </svg> -->
           </div>
         </form>
       </div>
