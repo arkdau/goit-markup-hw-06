@@ -635,7 +635,7 @@
       <div class="modal">
         <button type="button" class="btn__close" data-modal-close>
           <svg class="icon icon__cross">
-            <use href="./images/icons.svg#icon-cross"></use>
+            <use href="./images/icons.svg#icon-btn_close"></use>
           </svg>
         </button>
         <h2 class="form-modal__header">Zostaw swoje dane w formularzu poniżej</h2>
@@ -667,24 +667,35 @@
             placeholder="Wprowadź tekst"
             id="comment"
           ></textarea>
-          <div class="icon__container">
-            <!-- <svg class="icon uncheckbox__icon"> -->
-              <!-- <use href="./images/icons.svg#icon-uncheck_Box"></use> -->
-            <!-- </svg> -->
-            <svg class="icon checkbox__icon">
-              <use href="./images/icons.svg#icon-check"></use>
-            </svg>
-            <input
-              class="form-modal__input-checkbox"
-              type="checkbox"
-              name="ack_privacy_policy"
-              id="privacy_policy"
-            />
+          <!-- <div class="icon__container"> -->
+          <!-- <svg class="icon uncheckbox__icon"> -->
+          <!-- <use href="./images/icons.svg#icon-uncheck_Box"></use> -->
+          <!-- </svg> -->
+          <!-- <svg class="icon checkbox__icon"> -->
+          <!-- <use href="./images/icons.svg#icon-check"></use> -->
+          <!-- </svg> -->
+          <!-- <input -->
+          <!-- class="form-modal__input-checkbox" -->
+          <!-- type="checkbox" -->
+          <!-- name="ack_privacy_policy" -->
+          <!-- id="privacy_policy" -->
+          <!-- /> -->
 
-            <label class="form-modal__label-checkbox" for="privacy_policy"
-              >Oświadczam iż akceptuję<span>Regulamin i Politykę Prywatności.</span></label
+          <!-- <label class="form-modal__label-checkbox" for="privacy_policy" -->
+          <!-- >Oświadczam iż akceptuję<span>Regulamin i Politykę Prywatności.</span></label -->
+          <!-- > -->
+          <!-- </div> -->
+          <div class="form-user__checkbox">
+            <input type="checkbox" name="" value="" id="privacy_policy" />
+            <label class="form-user__checkbox-label" for="privacy_policy"
+              >Oświadczam iż akceptuję
+              <span class="form-user__checkbox-label--text-highlight">Regulamin</span> i
+              <span class="form-user__checkbox-label--text-highlight"
+                >Politykę Prywatności.</span
+              ></label
             >
           </div>
+          <input class="form-user__submit" type="submit" name="" value="Wyślij">
         </form>
       </div>
     </div>
