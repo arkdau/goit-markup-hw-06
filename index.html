@@ -617,15 +617,15 @@
             <input
               class="form-newsletter__input"
               type="email"
-              name="email"
+              name="data-email"
               id="user_email"
               placeholder="E-mail"
             />
+            <button class="form-newsletter__btn-send" type="submit">
+              Zapisz się
+              <svg width="24" height="24"><use href="./images/icons.svg#icon-send"></use></svg>
+            </button>
           </form>
-          <button class="form-newsletter__btn-send" type="submit">
-            Zapisz się
-            <svg width="24" height="24"><use href="./images/icons.svg#icon-send"></use></svg>
-          </button>
         </div>
       </div>
     </footer>
@@ -665,6 +665,7 @@
           <textarea
             class="form-modal__textarea-comment"
             placeholder="Wprowadź tekst"
+            name="data-comment"
             id="comment"
           ></textarea>
           <!-- <div class="icon__container"> -->
@@ -686,7 +687,7 @@
           <!-- > -->
           <!-- </div> -->
           <div class="form-user__checkbox">
-            <input type="checkbox" name="" value="" id="privacy_policy" />
+            <input type="checkbox" name="data-rodo" value="agreement" id="privacy_policy" />
             <label class="form-user__checkbox-label" for="privacy_policy"
               >Oświadczam iż akceptuję
               <span class="form-user__checkbox-label--text-highlight">Regulamin</span> i
@@ -695,7 +696,7 @@
               ></label
             >
           </div>
-          <input class="form-user__submit" type="submit" name="" value="Wyślij">
+          <input class="form-user__submit" type="submit" name="" value="Wyślij" />
         </form>
       </div>
     </div>
