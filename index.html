@@ -611,7 +611,7 @@
         </div>
         <!-- save to newletter -->
         <div class="flex newsletter__flex">
-          <form class="form-newsletter">
+          <form name="form-newsletter" class="form-newsletter">
             <label class="form-newsletter__label" for="user_email">Zapisz się do newslettera</label>
             <!-- <p> -->
             <input
@@ -620,6 +620,7 @@
               name="data-email"
               id="user_email"
               placeholder="E-mail"
+              required
             />
             <button class="form-newsletter__btn-send" type="submit">
               Zapisz się
@@ -638,57 +639,75 @@
             <use href="./images/icons.svg#icon-btn_close"></use>
           </svg>
         </button>
-        <h2 class="form-modal__header">Zostaw swoje dane w formularzu poniżej</h2>
-        <form class="form-modal flex form-modal__flex">
+        <h2 class="form-user__header">Zostaw swoje dane w formularzu poniżej</h2>
+        <form name="form-user" class="form-user flex form-user__flex">
           <div class="icon__container">
-            <label class="form-modal__label-name" for="name"> Imie </label>
-            <input class="form-modal__input-name" type="text" name="data-name" id="name" />
+            <label class="form-user__label-name" for="name"> Imie </label>
+            <input
+              class="form-user__input-name"
+              type="text"
+              name="data-name"
+              id="name"
+              required
+              pattern="[A-Z][a-zA-Z0-9]{1,}"
+              title="First capital letter"
+              tabindex="1"
+            />
             <svg class="icon name__icon">
               <use href="./images/icons.svg#icon-user"></use>
             </svg>
           </div>
           <div class="icon__container">
-            <label class="form-modal__label-phone" for="phone"> Telefon </label>
-            <input class="form-modal__input-phone" type="tel" name="data-phone" id="phone" />
+            <label class="form-user__label-phone" for="phone"> Telefon </label>
+            <input
+              class="form-user__input-phone"
+              type="tel"
+              name="data-phone"
+              id="phone"
+              minlength="9"
+              required
+              pattern="\d{3}[\-]\d{3}[\-]\d{3}"
+              title="Phone Number in the format of: 123-456-789"
+              tabindex="2"
+            />
             <svg class="icon phone__icon">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
           <div class="icon__container">
-            <label class="form-modal__label-email" for="email"> Email </label>
-            <input class="form-modal__input-email" type="email" name="data-email" id="email" />
+            <label class="form-user__label-email" for="email"> Email </label>
+            <input
+              class="form-user__input-email"
+              type="email"
+              name="data-email"
+              id="email"
+              required
+              tabindex="3"
+            />
             <svg class="icon email__icon">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
-          <label class="form-modal__label-comment" for="comment">Komentarz</label>
+          <label class="form-user__label-comment" for="comment">Komentarz</label>
           <textarea
-            class="form-modal__textarea-comment"
+            class="form-user__textarea-comment"
             placeholder="Wprowadź tekst"
             name="data-comment"
             id="comment"
+            tabindex="4"
           ></textarea>
-          <!-- <div class="icon__container"> -->
-          <!-- <svg class="icon uncheckbox__icon"> -->
-          <!-- <use href="./images/icons.svg#icon-uncheck_Box"></use> -->
-          <!-- </svg> -->
-          <!-- <svg class="icon checkbox__icon"> -->
-          <!-- <use href="./images/icons.svg#icon-check"></use> -->
-          <!-- </svg> -->
-          <!-- <input -->
-          <!-- class="form-modal__input-checkbox" -->
-          <!-- type="checkbox" -->
-          <!-- name="ack_privacy_policy" -->
-          <!-- id="privacy_policy" -->
-          <!-- /> -->
-
-          <!-- <label class="form-modal__label-checkbox" for="privacy_policy" -->
-          <!-- >Oświadczam iż akceptuję<span>Regulamin i Politykę Prywatności.</span></label -->
-          <!-- > -->
-          <!-- </div> -->
           <div class="form-user__checkbox">
-            <input type="checkbox" name="data-rodo" value="agreement" id="privacy_policy" />
+            <input
+              type="checkbox"
+              name="data-rodo"
+              value="agreement"
+              id="privacy_policy"
+              required
+              tabindex="5"
+            />
             <label class="form-user__checkbox-label" for="privacy_policy"
+              ><svg class="form-user__checkbox-svg">
+                <use href="./images/icons.svg#icon-check"></use></svg
               >Oświadczam iż akceptuję
               <span class="form-user__checkbox-label--text-highlight">Regulamin</span> i
               <span class="form-user__checkbox-label--text-highlight"
