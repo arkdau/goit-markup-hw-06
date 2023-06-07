@@ -634,7 +634,7 @@
     <!-- modal-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="btn__close" data-modal-close>
+        <button type="button" class="btn__close" data-modal-close tabindex="7">
           <svg class="icon icon__cross">
             <use href="./images/icons.svg#icon-btn_close"></use>
           </svg>
@@ -715,7 +715,8 @@
               ></label
             >
           </div>
-          <input class="form-user__submit" type="submit" value="Wyślij" />
+          <!-- <button class="form-user__submit" type="submit" tabindex="6">Wyślij mnie</button> -->
+          <input class="form-user__submit" type="submit" value="Wyślij" tabindex="6" />
         </form>
       </div>
     </div>
