@@ -769,8 +769,13 @@ input[type='checkbox'] {
   background-color: #fff;
   cursor: pointer;
 }
+.form-user__checkbox > input:focus {
+  outline-offset: 1px;
+  outline: #2196f3 solid 2px;
+}
 .form-user__checkbox > input:checked {
   border: 2px solid #2196f3;
+  outline: none;
   /* background-color: #2196f3; */
 }
 /* However, this way might be better -------------------- */
