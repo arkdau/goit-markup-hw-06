@@ -463,28 +463,16 @@ header {
 }
 /* form send to newsletter ---------------- */
 .newsletter__flex {
-  position: relative;
-  /* display: flex; */
   gap: 12px;
-  /* justify-content: center; */
   align-items: start;
-  /* padding-top: 20px; */
 }
 
 .form-newsletter {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-top: 14px;
-  padding-left: 8px;
-
-  /* padding-left: 0px; */
-  /* position: absolute; */
-  /* left: 815px; */
-  /* top: 2787px; */
 }
 .form-newsletter__label {
-  /* display: flex; */
   color: var(--color-text-light);
   font-weight: 700;
   font-size: 14px;
@@ -497,7 +485,6 @@ header {
   box-sizing: border-box;
   width: 358px;
   height: 50px;
-  /* display: flex; */
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -505,17 +492,14 @@ header {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 1rem;
-  /* line-height: 1.25; */
   letter-spacing: 0.03em;
   padding: 15px 16px;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form-newsletter__btn-send {
-  position: absolute;
-  left: 377px;
-  top: 50px;
   width: 200px;
   height: 50px;
   display: flex;
@@ -541,27 +525,23 @@ header {
   background-color: hsla(0, 0%, 0%, 0.5);
   position: fixed;
   left: 0;
-  /* right: 0; */
   top: 0;
-  /* bottom: 0; */
   width: 100%;
   height: 100%;
 }
 .modal {
-  padding: 40px 40px;
+  padding: 40px;
   box-sizing: border-box;
   cursor: initial;
-  /* cursor: pointer; */
   position: absolute;
   top: 50%;
   left: 50%;
   width: 528px;
-  min-height: 581px;
+  height: 581px;
   background-color: var(--bgcolor-light);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  /* modal animation below */
   transform: translate(-50%, -50%) scale(1);
   transition-property: transform;
   transition-duration: 1s;
@@ -598,20 +578,19 @@ svg.icon__cross {
   line-height: 1.1666;
   letter-spacing: 0.01em;
   color: var(--color-text-secondary);
+  display: block;
+  margin-bottom: 4px;
 }
 .form-user__header {
+  font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.15;
-  padding-bottom: 11px;
+  text-align: center;
   color: var(--color-text-dark);
-}
-.form-user__flex {
-  flex-direction: column;
-  gap: 0;
-  align-items: flex-start;
+  margin-bottom: 11px;
 }
 .form-user__label-name {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 input[type='text'] {
   -webkit-transition: 0.5s;
@@ -620,9 +599,8 @@ input[type='text'] {
 }
 .form-user__input-name {
   box-sizing: border-box;
-  width: 448px;
+  width: 100%;
   height: 40px;
-  margin-bottom: 10px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -644,7 +622,7 @@ input[type='text'] {
   top: 30px;
 }
 .form-user__label-phone {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 input[type='tel'] {
   -webkit-transition: 0.5s;
@@ -653,9 +631,8 @@ input[type='tel'] {
 }
 .form-user__input-phone {
   box-sizing: border-box;
-  width: 448px;
+  width: 100%;
   height: 40px;
-  margin-bottom: 10px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -677,7 +654,7 @@ input[type='tel'] {
   top: 32px;
 }
 .form-user__label-email {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 input[type='email'] {
   -webkit-transition: 0.5s;
@@ -686,9 +663,8 @@ input[type='email'] {
 }
 .form-user__input-email {
   box-sizing: border-box;
-  width: 448px;
+  width: 100%;
   height: 40px;
-  margin-bottom: 10px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -710,7 +686,6 @@ input[type='email'] {
   top: 32px;
 }
 .form-user__label-comment {
-  padding-bottom: 4px;
   text-align: left;
 }
 .form-user__textarea-comment {
@@ -817,10 +792,12 @@ input[type='checkbox'] {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  margin: 34px auto 39px auto;
+  margin: 0 auto;
+  margin-top: 30px;
   /* outline: none; */
   cursor: pointer;
   transition-duration: 0.3s;
+  display: block;
 }
 input.form-user__submit:focus {
   outline-offset: -10px;
@@ -840,4 +817,5 @@ input.form-user__submit:focus {
   position: relative;
   left: 0px;
   top: 0;
+  margin-bottom: 10px;
 }

@@ -610,22 +610,23 @@
           <!-- end social link -->
         </div>
         <!-- save to newletter -->
-        <div class="flex newsletter__flex">
+        <div>
           <form name="form-newsletter" class="form-newsletter">
             <label class="form-newsletter__label" for="user_email">Zapisz się do newslettera</label>
-            <!-- <p> -->
-            <input
-              class="form-newsletter__input"
-              type="email"
-              name="data-email"
-              id="user_email"
-              placeholder="E-mail"
-              required
-            />
-            <button class="form-newsletter__btn-send" type="submit">
-              Zapisz się
-              <svg width="24" height="24"><use href="./images/icons.svg#icon-send"></use></svg>
-            </button>
+            <div class="flex newsletter__flex">
+              <input
+                class="form-newsletter__input"
+                type="email"
+                name="data-email"
+                id="user_email"
+                placeholder="E-mail"
+                required
+              />
+              <button class="form-newsletter__btn-send" type="submit">
+                Zapisz się
+                <svg width="24" height="24"><use href="./images/icons.svg#icon-send"></use></svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -639,8 +640,8 @@
             <use href="./images/icons.svg#icon-btn_close"></use>
           </svg>
         </button>
-        <h2 class="form-user__header">Zostaw swoje dane w formularzu poniżej</h2>
-        <form name="form-user" class="form-user flex form-user__flex">
+        <p class="form-user__header">Zostaw swoje dane w formularzu poniżej</p>
+        <form name="form-user" class="form-user">
           <div class="icon__container">
             <label class="form-user__label-name" for="name"> Imie </label>
             <input
